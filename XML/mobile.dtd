@@ -1,0 +1,7 @@
+<!ELEMENT mobileshop (mobile+)>
+    <!ELEMENT mobile (id, name, brand, price)>  
+    <!ELEMENT id (#PCDATA)>
+    <!ELEMENT name (#PCDATA)>
+    <!ELEMENT brand (#PCDATA)>
+    <!ELEMENT price (#PCDATA)>
+    

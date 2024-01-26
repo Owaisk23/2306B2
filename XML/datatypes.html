@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Datatypes in JSON</h1>
+
+    <script>
+        let student = {
+            "std_id": 2314,  //number/int
+            "std_name": "Aqib", //string
+            "eligible": true, //boolean
+            "marks": 78.23, //float
+            "hobbies": ["Swimming", "Cricket", "Football"], //array
+            "desc": {"country":"Pak","city": "KHI","location":"NN"} //object
+        }
+
+        console.log(student) 
+
+        console.log("Access Datatypes in JSON");
+
+        console.log(student.std_id);
+        console.log(student.std_name);
+        console.log(student.eligible);
+        console.log("Aqib marks: " + student.marks);
+        console.log(student.hobbies[1]);
+        console.log(student.desc.country)
+    </script>
+</body>
+</html>

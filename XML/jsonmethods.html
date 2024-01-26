@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JSON access using For In Loop</h1>
+
+    <script>
+        var car = {
+            "name": "Carolla",
+            "brand": "Toyota",
+            "price": 2348888
+        }
+
+        console.log(typeof(car)) //object
+
+        localStorage.setItem("data1", car); 
+        let abc = JSON.stringify(car); //string convert
+
+        console.log(typeof(abc)) //string
+
+        localStorage.setItem("cardata", abc); 
+
+        // parsing
+        let xyz = JSON.parse(localStorage.getItem("cardata")) //type:string
+        // let xyz = localStorage.getItem("cardata") //type:string
+
+
+        console.log(xyz.name);
+
+
+        // document.write(car["brand"]);
+
+        // for(abc in car){
+        //     document.write(abc + ':'); //keys
+        //     document.write(car[abc] + "<br>"); //values
+        // }
+
+        // let fname = "Owais";
+
+        // localStorage.setItem("abc", fname);
+
+        // console.log("My Name is " + localStorage.getItem("abc"))
+    </script>
+</body>
+</html>

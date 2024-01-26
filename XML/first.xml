@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<school>
+    <student>
+        <id>143267</id>
+        <name>Salik</name>
+        <gender>male</gender>
+        <batch>2306B2</batch>
+    </student>
+    <student>
+        <id>143267</id>
+        <name>Salik</name>
+        <gender>male</gender>
+        <batch>2306B2</batch>
+    </student>
+</school>

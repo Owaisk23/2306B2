@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Data access in JSON</h1>
+    <script>
+        let car = {
+            "name": "Carolla",
+            "brand": "Toyota",
+            "price": 1530000
+        }
+
+
+        document.write(car.name + "<br/>")
+        document.write(car.price + "<br/>")
+        // document.write(car.brand + "<br/>")
+        document.write(car["brand"] + "<br/>")
+        document.write(car["price"] + "<br/>")
+        
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+{
+    "id": 112,
+    "name": "Owais",
+    "profession": "Software developer",
+    "age": 23,
+    "gender": "male",
+    "hobies": ["Cricket", "Swimming", "Football"]
+}

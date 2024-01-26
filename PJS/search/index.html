@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <input type="search" placeholder="Search here...!" id="searchbox">
+
+    <ol id="list">
+
+    </ol>
+
+    <script>
+        let movies = [
+            "The Shawshank Redemption",
+            "The Godfather",
+            "The Dark Knight",
+            "Pulp Fiction",
+            "Schindler's List",
+            "Forrest Gump",
+            "The Matrix",
+            "Titanic",
+            "Inception",
+            "Fight Club",
+            "The Silence of the Lambs",
+            "The Lord of the Rings: The Fellowship of the Ring",
+            "The Lord of the Rings: The Two Towers",
+            "The Lord of the Rings: The Return of the King",
+            "Star Wars: Episode IV - A New Hope",
+            "Star Wars: Episode V - The Empire Strikes Back",
+            "Star Wars: Episode VI - Return of the Jedi",
+            "The Godfather: Part II",
+            "The Green Mile",
+            "Goodfellas",
+            "The Usual Suspects",
+            "Se7en",
+            "Gladiator",
+            "The Departed",
+            "The Shawshank Redemption",
+            "Casablanca",
+            "The Godfather",
+            "Gone with the Wind",
+            "Citizen Kane",
+            "The Wizard of Oz",
+            "Psycho",
+            "Lawrence of Arabia",
+            "2001: A Space Odyssey",
+            "E.T. the Extra-Terrestrial",
+            "Raiders of the Lost Ark",
+            "Jurassic Park",
+            "The Terminator",
+            "Back to the Future",
+            "The Lion King",
+            "Toy Story",
+            "Finding Nemo",
+            "The Dark Knight",
+            "The Avengers",
+            "The Shawshank Redemption",
+            "The Godfather",
+            "The Dark Knight",
+            "Pulp Fiction",
+            "Schindler's List",
+            "Forrest Gump",
+            "The Matrix",
+            "Titanic",
+            "Inception",
+            "Fight Club",
+            "The Silence of the Lambs",
+            "The Lord of the Rings: The Fellowship of the Ring",
+            "The Lord of the Rings: The Two Towers",
+            "The Lord of the Rings: The Return of the King",
+            "Star Wars: Episode IV - A New Hope",
+            "Star Wars: Episode V - The Empire Strikes Back",
+            "Star Wars: Episode VI - Return of the Jedi",
+            "The Godfather: Part II",
+            "The Green Mile",
+            "Goodfellas",
+            "The Usual Suspects",
+            "Se7en",
+            "Gladiator",
+            "The Departed",
+            "Casablanca",
+            "The Godfather",
+            "Gone with the Wind",
+            "Citizen Kane",
+            "The Wizard of Oz",
+            "Psycho",
+            "Lawrence of Arabia",
+            "2001: A Space Odyssey",
+            "E.T. the Extra-Terrestrial",
+            "Raiders of the Lost Ark",
+            "Jurassic Park",
+            "The Terminator",
+            "Back to the Future",
+            "The Lion King",
+            "Toy Story",
+            "Finding Nemo",
+            "The Dark Knight",
+            "The Avengers"
+        ]
+        console.log(movies)
+
+        let newMovies = movies.map((movie) => {
+            return movie.toLowerCase();
+        })
+        console.log(newMovies);
+
+        let searchbox = document.getElementById('searchbox');
+        let list = document.getElementById('list');
+
+        let Search = () => {
+            let query = searchbox.value.toLowerCase();
+
+            let result = newMovies.filter((movie) => {
+                if (movie.includes(query)) return movie;
+            })
+
+            if(result.length == 0){
+                list.innerHTML = `Oops movie not found 😑`
+            }else{
+                list.innerHTML = "";
+                result.forEach((element) => {
+                    list.innerHTML += `<li>${element}</li>`
+                });
+            }
+        }
+        searchbox.addEventListener('keyup', Search);
+
+    </script>
+</body>
+
+</html>

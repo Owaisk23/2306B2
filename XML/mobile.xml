@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="mobile.xsl" type="text/xsl"?>
+<?xml-model href="mobile.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<?xml-model href="mobile.dtd" type="application/xml-dtd"?>
+<mobileshop>
+    <mobile>
+        <id>0001</id>
+        <name>Samsung A32</name>
+        <brand>Samsung</brand>
+        <price>56000</price>
+    </mobile>
+    <mobile>
+        <id>0002</id>
+        <name>Pixel 5</name>
+        <brand>Google</brand>
+        <price>76000</price>
+    </mobile>
+    <mobile>
+        <id>0003</id>
+        <name>Inifinix A32</name>
+        <brand>Inifinix</brand>
+        <price>26000</price>
+    </mobile>
+    <mobile>
+        <id>0004</id>
+        <name>Iphone 13 pro</name>
+        <brand>apple</brand>
+        <price>156000</price>
+    </mobile>
+    <mobile>
+        <id>0005</id>
+        <name>Oppo A32</name>
+        <brand>Oppo</brand>
+        <price>2000</price>
+    </mobile>
+</mobileshop>

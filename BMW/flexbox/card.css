@@ -1,0 +1,23 @@
+.container{
+    border: 5px solid black;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.card{
+    border: 2px solid rebeccapurple;
+    width: 200px;
+    height: 320px;
+    border-radius: 10px;
+}
+
+.image img{
+    width: 100%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.link{
+    text-align: end;
+    margin-right: 10px;
+}

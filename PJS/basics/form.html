@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <label for="">Email</label>
+        <input type="email" id="email"> <br><br>
+        
+        <label for="">Password</label>
+        <input type="password"  id="password"> <br><br>
+
+        <input type="button" value="LogIn" onclick="logIn()">
+    </form>
+
+    <script>
+        function logIn(){
+            let user_email = document.querySelector('#email').value;
+            let user_pass = document.querySelector('#password').value;
+        
+            if(user_email == "" || user_pass == ""){
+                alert('Plz fill all fields');
+            }else{
+                alert("Your email is " + user_email + " And your pass is " + user_pass );
+            }
+    
+    
+        }
+    </script>
+</body>
+</html>
