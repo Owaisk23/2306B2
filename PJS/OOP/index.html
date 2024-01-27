@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Pillars of OOP</h1>
+    <script>
+        // var car1 = {
+        //     name: "Civic",
+        //     brand: "Honda",
+        //     price: 26080809
+        // }
+
+        // console.log(car.price)
+
+        // Inheritance
+        // PARENT CLASS
+        class Vehicle{
+            constructor(name, brand, price, engine){
+                this.name = name,
+                this.brand = brand,
+                this.price = price,
+                this.engine = engine
+            }
+
+            start(){
+                console.log(`${this.brand} ${this.name} has a price of ${this.price} with engine power of ${this.engine}`);
+            }
+        }
+
+        // OBJECTS
+
+        // let civic = new Vehicle("Civic", "Honda", 1450000, "1800cc");
+        // let landcruiser = new Vehicle("Landcruiser", "Toyota", 33450000, "4500cc");
+        // let Corolla = new Vehicle("Corolla", "Toyota", 2500000, "1300cc");
+        // let Mehran = new Vehicle("Mehran", "Suzuki", 700000, "900cc");
+
+        // //  Calling
+        // landcruiser.start();
+        // Corolla.start();
+        // Mehran.start();
+        // civic.start();
+        
+        // Child CLASS
+        class MotorBikes extends Vehicle{
+            constructor(name, brand, price, engine, seatingCapacity, fuelTank){
+                super(name, brand, price, engine),
+                this.seatingCapacity = seatingCapacity,
+                this.fuelTank = fuelTank
+            }
+
+            kick(){
+                console.log(`${this.brand} ${this.name} one kick start hai. price of ${this.price} iska engine power ${this.engine} with seating capacity of ${this.seatingCapacity} iska fuel tank ${this.fuelTank} itne litre ka hai.. !`)
+            }
+        }
+
+        // Object
+
+        let ybr = new MotorBikes("ybr", "yamaha", "230044", "220cc", "2 persons", "15litre"); 
+
+        // calling
+        ybr.kick();
+
+    </script>
+</body>
+</html>
