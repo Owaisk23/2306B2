@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Welcome in Async JS</h1>
+    <button id="stop">STOP</button>
+
+    <script>
+        // setTimeout(function(), time(3s==3000))
+        // example 1
+        // console.log('a')
+        // console.log('b')
+        // console.log('c')
+        // console.log('d')
+        // setTimeout(function(){
+        //     console.log('Hello after 5 secs')
+        // }, 5000);
+        // console.log('e')
+        // console.log('f')
+        // console.log('g')
+        // console.log('h')
+        // console.log('i')
+        // const hello3 = function(){
+        //     console.log('Hello after 3 secs')
+        // }
+        // setTimeout(hello3, 3000);
+        // console.log('a')
+        // console.log('b')
+        // console.log('c')
+        // console.log('d')
+
+        // const sayME = function(){
+        //     console.log('OWais Ahmed Khan')
+        // }
+        // setTimeout(sayME, 7000)
+
+        // Example2
+
+
+        const changeText = function(){
+            document.querySelector('h1').innerHTML = "Change text by Async";
+        }
+
+        const timeOut = setTimeout(changeText, 4000);
+
+        // clearTimeout(timeOut);
+
+        document.querySelector('#stop').addEventListener('click', function(){
+            clearTimeout(timeOut);
+            console.log('Stop krdiya he func');
+        })
+    </script>
+</body>
+</html>
