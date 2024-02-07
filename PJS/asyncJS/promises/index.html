@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Welcome in promises</h1>
+
+
+    <script>
+        // Example 1
+
+        // const promiseOne = new Promise(function(resolve, reject){
+
+        //     setTimeout(function(){
+        //         // async data from database
+        //         console.log("Promise completed");
+        //         resolve()
+        //     }, 4000)
+
+        // })
+
+        // promiseOne.then(function(){
+        //     console.log("Promise consumed!!")
+        // })
+
+
+        // Example 2
+
+        // new Promise(function(res,rej){
+
+        //     setTimeout(function(){
+        //         // async data from database
+        //         console.log("Async Task 2");
+        //         res()
+        //     }, 5000)
+
+
+        // }).then(function(){
+
+        //     console.log("Async task 2 completed");
+        // })
+
+
+        // Example 3 
+
+        // const promiseThree = new Promise(function(resolve, reject){
+        //     setTimeout(function(){
+        //         resolve({"name": "Owais", "batch": "2306B2", "Position": "faculty", "Course": "PJS"})
+        //     }, 7000)
+
+        // })
+
+        // promiseThree.then(function(user){
+        //     console.log(user)
+        // })
+
+        // Example 4
+        // let pizzaKhilaya = true;
+
+        // let prom = new Promise(function (res, rej) {
+        //     if (pizzaKhilaya == true) {
+        //         return res("Thanks for the treat");
+        //     } else {
+        //         return rej("Acha nhi kiya tmne")
+        //     }
+        // }).then(function (data) {
+        //     console.log(data)
+        //     console.log("then chal gaya")
+        // }).catch(function (data) {
+        //     console.log(data)
+        //     console.log("catch is running")
+        // })
+
+
+        // Example 5 
+
+        let number = Math.round(Math.random() * 10)
+        console.log(number);
+
+        let checkNum = new Promise(function (res, rej) {
+            if (number < 5) {
+                return res("Wada pura hugaya🤩");
+            } else {
+                return rej("Wada toot gaya😥")
+            }
+        }).then(function (c) {
+            console.log(c)
+            
+        }).catch(function (c) {
+            console.log(c)
+            
+        })
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

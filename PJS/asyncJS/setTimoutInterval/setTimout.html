@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .notify{
+            display: none;
+            background-color: cyan;
+            color: black;
+            position: fixed;
+            right: 10px;
+            bottom: 10px;
+            padding: 10px;
+        }   
+    </style>
+</head>
+<body>
+    <button onclick="showNotification()">Show Notification</button>
+    <div class="notify"></div>
+
+    <script>
+        function showNotification(){
+            var notify = document.querySelector('.notify');
+            notify.textContent = 'Action Successful';
+            notify.style.display = 'block';
+
+
+            setTimeout(function(){
+                notify.style.display = 'none';
+            }, 4000)
+
+        }
+    </script>
+</body>
+</html>

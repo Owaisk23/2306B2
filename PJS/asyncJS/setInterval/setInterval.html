@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #clock{
+            text-align: center;
+            font-size: 24px;
+            margin-top: 10px;
+    }
+    </style>
+</head>
+<body>
+    <div id="clock">
+    </div>
+
+    <script>
+        function getClock(){
+            var clock = document.querySelector('#clock');
+
+            var currTime = new Date();
+            var hours = currTime.getHours();
+            var mins = currTime.getMinutes();
+            var secs = currTime.getSeconds();
+            
+            mins = (mins < 10 ? '0' : '') + mins;
+            secs = (secs < 10 ? '0' : '') + secs;
+
+
+            clock.textContent = hours + ':' + mins + ':' + secs
+        }
+
+        setInterval(getClock, 1000)
+
+        getClock();
+    </script>
+</body>
+</html>
