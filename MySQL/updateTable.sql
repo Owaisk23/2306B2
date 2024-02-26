@@ -66,7 +66,50 @@ INSERT INTO employees (emp_id, emp_fname, emp_lname)
 VALUES (8, "Bobzi", "King");
 
 
+select * from  employees;
+
 select * from  employees
 where emp_id = 5;
+
+select * from  employees
+where emp_lname = "Anasri";
+
+select * from  employees
+where emp_hourpay > 75;
+
+select * from  employees
+where emp_hourpay IS null;
+
+insert into employees(emp_id, emp_fname, emp_lname)
+values (9, "Fawad", "Rajput");
+
+Select * from employees
+where emp_hiredate is null;
+
+select * from employees
+where emp_hiredate > "2022-12-15";
+
+update employees
+set emp_hourpay = 78.92
+where emp_id = 5;
+
+
+DELETE FROM employees
+where emp_id = 5;
+
+select emp_fname, emp_hiredate from employees;
+
+set autocommit = off;
+
+select * from employees;
+
+
+DELETE FROM employees
+where emp_id > 2;
+
+commit;
+
+rollback;
+
 
 
