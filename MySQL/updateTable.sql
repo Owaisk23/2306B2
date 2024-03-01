@@ -84,6 +84,9 @@ insert into employees(emp_id, emp_fname, emp_lname)
 values (9, "Fawad", "Rajput");
 
 Select * from employees
+where emp_hiredate is not null;
+
+Select * from employees
 where emp_hiredate is null;
 
 select * from employees
