@@ -73,6 +73,8 @@ select * from emp;
 select e1.id,e1.name as employee_name,e2.name as manager_name from emp as e1
 join emp as e2
 on e1.manager_id=e2.id;
+
+
 -- union 
 create table emp2(
 id int primary key,
@@ -82,6 +84,7 @@ manager_id int
 insert into emp2 values
 (1,"Haris",2),
 (2,"habib",null);
+
 select * from emp2;
   
 select * from emp
@@ -92,3 +95,35 @@ select * from emp2;
 select * from emp
 union all
 select * from emp2;
+
+
+select ABS(-5.89) as positiveval;
+select ceil(3.98);
+select ceil(3.1);
+select floor(3.1);
+select floor(3.9);
+select SIN(45);
+select TAN(45);
+select COS(90);
+select sqrt(625);
+select ascii("U");
+
+select char_length("Owais Ahmed Khan");
+select concat("hello", " world ");
+
+select curdate();
+select curtime();
+select current_timestamp();
+
+
+
+
+
+
+
+
+
+
+
+
+
