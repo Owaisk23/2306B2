@@ -101,7 +101,7 @@
     // echo $res;
 
     // conditional statements
-    $age = 21;
+    // $age = 21;
 
     // if($age > 18){
     //     echo "You are eligible for license";
@@ -110,27 +110,59 @@
     //     echo "You are not eligible for license";
     // }
 
-    if($age > 18){
-        // echo "You are eligible for voting";
-        echo "<script>console.log('You are eligible for voting')</script>";
+    // if($age > 18){
+    //     // echo "You are eligible for voting";
+    //     echo "<script>console.log('You are eligible for voting')</script>";
         
+    // }
+    // elseif($age == 18){
+    //     // echo "<script>alert('Phle nic bnwao phr vote daldena')</script>";
+    //     echo "<h1>Phle nic bnwao phr vote daldena</h1>";
+    // }
+    // else{
+    //     echo "You are not eligible for voting";
+    // }
+
+
+    // switch case
+
+    // switch(key) {
+    //     case x:
+    //       // code block
+    //       break;
+    //     case y:
+    //       // code block
+    //       break;
+    //     default:
+    //       // code block
+    //   }
+
+
+
+    $isVowel = 'y';
+
+    switch($isVowel){
+        case 'a':
+            echo "A is a vowel";
+            break;
+        case 'e':
+            echo "E is a vowel";
+            break;
+        case 'i':
+            echo "I is a vowel";
+            break;
+        case 'o':
+            echo "O is a vowel";
+            break;
+        case 'u':
+            echo "U is a vowel";
+            break;
+
+        default:
+            echo "It's not a vowel";
+            break;
     }
-    elseif($age == 18){
-        // echo "<script>alert('Phle nic bnwao phr vote daldena')</script>";
-        echo "<h1>Phle nic bnwao phr vote daldena</h1>";
-    }
-    else{
-        echo "You are not eligible for voting";
-    }
-
-
-
-
-
-
-
-
-
+ 
 
 
 
