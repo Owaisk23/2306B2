@@ -41,8 +41,10 @@
 
         // foreach($employee as $key => $value){
         //         echo "$key: $value <br>";
-            // }
+        //     }
+        
 
+        // MultiDimentional Array
         $result = [
             ["Razi", 97],
             // 00    01
@@ -53,20 +55,78 @@
             ["Salik", 88],
             ["Husnain", 92]
         ];
-
-        // echo $result[2][1];
-
-
-        echo "<pre>";
-        print_r($result);
-        echo "</pre>"
+        // Students | Marks
 
 
+        // echo $result[4][0];
+
+
+        // echo "<pre>";
+        // print_r($result);
+        // echo "</pre>";
+
+        // echo "
+        // <h1>Student Result</h1>
+        // <table border='2'>
+        
+        // <tr>
+        //     <th>StudentNames</th>
+        //     <th>Percentages</th>
+        // </tr>";
+
+        // foreach($result as $key1 => $value1){
+        //     echo "<tr>";
+        //     foreach($value1 as $key2 => $value2){
+        //         echo "<td>$value2</td>";
+        //     }
+        //     echo "</tr>";
+        // }
 
 
 
+        // echo "</table>";
+
+        // Multidimentional Associative array
+
+        $marks = [
+            "Ali" => ["HTML" => 92, "CSS" => 80, "JS" => 76],
+            "Razi" => ["HTML" => 88, "CSS" => 90, "JS" => 86],
+            "Husnain" => ["HTML" => 100, "CSS" => 95, "JS" => 80],
+            "Sameer" => ["HTML" => 85, "CSS" => 81, "JS" => 98],
+            "Fawad" => ["HTML" => 85, "CSS" => 92, "JS" => 95]
+        ];
+        
+        // echo $marks["Sameer"]["JS"];
 
 
+        // echo "<pre>";
+        // print_r($marks);
+        // echo "</pre>";
+        // StdName | HTML | CSS | JS
+
+        echo "
+        <h1>Student Marks</h1>
+        <table border='2'>
+        
+        <tr>
+            <th>StudentNames</th>
+            <th>HTML</th>
+            <th>CSS</th>
+            <th>JS</th>
+        </tr>";
+
+        foreach($marks as $key1 => $value1){
+            echo "<tr>";
+            echo "<td>$key1</td>";
+            foreach($value1 as $key2 => $value2){
+                echo "<td>$value2</td>";
+            }
+            echo "</tr>";
+        }
+
+
+
+        echo "</table>";
 
 
 
@@ -75,5 +135,6 @@
 
 
     ?>
+
 </body>
 </html>
