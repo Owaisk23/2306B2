@@ -69,6 +69,12 @@ class ProductController extends Controller
 
      return view('products.edit',['product' => $product]);
     }
+
+    public function destroy($id){
+        $product = Products::where('id',$id)->first();
+        $product->delete();
+        return back()->withSuccess('Product Deleted !!!');
+    }
 }
 
 
